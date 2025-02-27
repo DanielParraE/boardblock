@@ -1,0 +1,9 @@
+/* CSS for BoardBlock */
+
+.boardblock_block .count {
+    font-weight: bold;
+}
+
+.boardblock_block p {
+    cursor: pointer;
+}
