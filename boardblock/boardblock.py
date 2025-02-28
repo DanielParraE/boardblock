@@ -100,6 +100,7 @@ class BoardBlock(XBlock):
         lang_code = locale_code.split('-')[0]
         for code in (locale_code, lang_code, 'en'):
             text_js_path = text_js.format(locale_code=code)
+            print(f"Resource module: {resource_loader.module_name}")
             if resources.files(resource_loader.module_name).joinpath(text_js_path).is_file():
                 return text_js_path
         return None
