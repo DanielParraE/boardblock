@@ -9,7 +9,7 @@ from xblock.core import XBlock
 from xblock.fields import Integer, Scope
 from xblock.utils.resources import ResourceLoader
 
-resource_loader = ResourceLoader(__name__)
+resource_loader = ResourceLoader("boardblock")
 
 
 class BoardBlock(XBlock):
